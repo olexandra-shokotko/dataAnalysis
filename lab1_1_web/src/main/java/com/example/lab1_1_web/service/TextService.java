@@ -27,9 +27,9 @@ public class TextService {
         return charCountMap;
     }
 
-    public int getNumOfChars(String text) {
+    public Double getNumOfChars(String text) {
         char[] strArray = text.toCharArray();
-        int count = 0;
+        Double count = 0.0;
 
         for (char c : strArray) {
             if (Character.isWhitespace(c)) {
